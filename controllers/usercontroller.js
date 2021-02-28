@@ -27,7 +27,7 @@ router.post("/create", function (req, res) {
 
         res.json({
           user: user,
-          message: "modpod User successfully crated!",
+          message: "modpod User successfully created!",
           sessionToken: token,
         });
       }
