@@ -57,7 +57,6 @@ router.get("/:podcastid", function (req, res) {
 //Updating a podcastid Entry
 router.put("/update/:entryId", validateSession, function (req, res) {
   const updateFavoritesEntry = {
-    podcastid: req.body.favorites.podcastid,
     rating: req.body.favorites.rating,
     review: req.body.favorites.review,
   };
