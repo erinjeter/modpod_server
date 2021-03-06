@@ -3,10 +3,7 @@ let express = require("express");
 const app = express();
 const sequelize = require("./db");
 
-
-
 var cors = require("cors");
-
 
 let favorites = require("./controllers/favoritescontroller");
 let user = require("./controllers/usercontroller");
@@ -20,10 +17,7 @@ sequelize.sync(); //method to ensure all models (tables) are actually put onto t
 
 app.use(express.json());
 
-
-
 app.use(cors());
-
 
 //Exposed Route
 app.use("/user", user);

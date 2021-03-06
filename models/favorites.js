@@ -6,11 +6,11 @@ module.exports = (sequelize, DataTypes) => {
     },
     rating: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     review: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     owner: {
       type: DataTypes.INTEGER,
@@ -18,10 +18,6 @@ module.exports = (sequelize, DataTypes) => {
   });
   return Favorites;
 };
-
-
-
-
 
 // Original
 
@@ -45,7 +41,3 @@ module.exports = (sequelize, DataTypes) => {
 //   });
 //   return Favorites;
 // };
-
-
-
-
