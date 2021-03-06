@@ -26,6 +26,6 @@ app.use(require("./middleware/validate-session"));
 app.use("/favorites", favorites);
 
 //need to always put code in-between the listen and the variable above
-app.listen(3000, function () {
-  console.log("App is listening on port 3000");
+app.listen(process.env.PORT, () => {
+  console.log(`server is listening on port ${process.env.PORT}`);
 });
