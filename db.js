@@ -6,6 +6,12 @@ const Sequelize = require("sequelize");
 const sequelize = new Sequelize("modpod", "postgres", "password", {
   host: "localhost",
   dialect: "postgres",
+  // dialectOptions: {
+  //   ssl: {
+  //     require: true,
+  //     rejectUnauthorized: false,
+  //   },
+  // },
 });
 
 //verify to test if connection is ok
